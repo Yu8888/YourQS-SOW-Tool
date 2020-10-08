@@ -1,0 +1,149 @@
+<h1>Zone</h1>
+<hr class="thick">
+<form [formGroup]="zone" (ngSubmit)="onSubmit()">
+
+    <div class="row">
+        <div class="col-1 mt-1 mr-2">
+            <label class="">Description:</label>
+        </div>
+
+        <div class="col">
+            <div class="form-group">
+                
+                <input type="text" class="form-control" formControlName="description">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col"></div>
+
+        <div class="col custom-margin-right">
+            <label>Detail</label>
+        </div>
+        <div class="col">
+            <label>Allowances</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-1 mt-1 mr-2">
+            <label>Demolition:</label>
+        </div>
+
+        <div class="col">
+            <input type="text" class="form-control w-100" formControlName="demolition">
+        </div>
+        
+        <div class="col">
+            <input type="text" class="form-control" formControlName="demolitionAllowances">
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class= "col-1 mt-1 mr-2">
+            <label>Carpentry:</label>
+        </div>
+
+        <div class= "col"> 
+            <input type="text" class="form-control" formControlName="carpentry">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="carpentryAllowances">
+        </div>   
+    </div>
+    
+
+    <div class="row mt-3">
+        <div class ="col-1 mt-1 mr-2">
+            <label>Plumbing:</label>
+        </div>
+        
+        <div class= "col">
+            <input type="text" class="form-control" formControlName="plumbing">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="plumbingAllowances">
+        </div>
+    </div>
+    
+
+    <div class="row mt-3">
+        <div class="col-1 mt-1 mr-2">
+            <label>Electrical:</label>
+        </div>
+
+        <div class= "col">
+            <input type="text" class="form-control" formControlName="electrical">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="electricalAllowances">
+
+        </div>
+    </div>
+    
+
+    <div class="row mt-3">
+        <div class="col-1 mt-1 mr-2">
+            <label>Cabinetry:</label>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="cabinetry">
+        </div>    
+        <div class="col">
+            <input type="text" class="form-control" formControlName="cabinetryAllowances">
+        </div>
+    </div>
+    
+
+    <div class="row mt-3">
+        <div class="col-1 mt-1 mr-2">
+            <label>Tiling:</label>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="tiling">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="tilingAllowances">
+        </div>
+    </div>
+    
+
+    <div class="row mt-3">
+        <div class="col-1 mt-1 mr-2">
+            <label>Decorating and finishes:</label>
+        </div>
+        <div class="col mt-4">
+            <input type="text" class="form-control" formControlName="decorating">
+        </div>
+        <div class="col mt-4">
+            <input type="text" class="form-control" formControlName="decoratingandfinishesAllowances">
+        </div>
+    </div>
+    
+
+    <div class="row mt-3">
+        <div class="col-1 mt-1 mr-2">
+            <label>Other:</label>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="other">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" formControlName="otherAllowances">
+        </div>
+    </div>
+</form>
+
+<div class="row mt-4">
+    <div class="col-sm">
+        <button type="button" class="btn btn-secondary float-right w-100">Add more zones</button>
+    </div>
+
+    <div class="col-sm">
+        <button (click)="onSubmit()" type="button" class="btn btn-primary float-right w-100">Submit</button>
+    </div>
+    
+    
+</div>
+

@@ -1,0 +1,345 @@
+<h1>Project Settings</h1>
+<form [formGroup]="projectSettings" class="pt-4 pl-4">
+    <div class="form-group">
+        <label>Address:</label>
+        <input type="text" class="form-control" formControlName="address">
+    </div>
+
+    <div class="form-group">
+        <label>Client:</label>
+        <input type="text" class="form-control" formControlName="client">
+    </div>
+
+    <div class="form-group">
+        <label>Project Description:</label>
+        <input type="text" class="form-control" formControlName="projectDescription">
+    </div>
+    <br>
+
+    <h2>People and Pricing</h2>
+    <hr class="thick">
+    <div formGroupName="peoplePricing">
+        <div class="form-group">
+            <label>Number of carpenters:</label>
+            <input type="number" class="form-control" formControlName="nCarpenters">
+        </div>
+
+        <div class="form-group">
+            <label>Estimated project duration (weeks):</label>
+            <input type="number" class="form-control" formControlName="eProjectDuration">
+        </div>
+
+        <div class="form-group">
+            <label>Builders contingency:</label>
+            <input type="number" class="form-control" formControlName="bContingency">
+        </div>
+
+        <div class="form-group">
+            <label>Drainage contingency:</label>
+            <input type="number" class="form-control" formControlName="dContingency">
+        </div>
+
+        <div class="form-group">
+            <label>Plumbing contingency:</label>
+            <input type="number" class="form-control" formControlName="pContingency">
+        </div>
+
+        <div class="form-group">
+            <label>Electrical contingency:</label>
+            <input type="number" class="form-control" formControlName="eContingency">
+        </div>
+
+        <div class="form-group">
+            <label>Client contingency allowance:</label>
+            <input type="number" class="form-control" formControlName="cContingency">
+        </div>
+    </div>
+    <br>
+
+    <h2>Site Arrangement</h2>
+    <hr class="thick">
+    <div formGroupName="siteArrangement">
+        <div class="form-group">
+            <label>Site Access:</label>
+            <input type="text" class="form-control" formControlName="siteAccess">
+        </div>
+
+        <div class="form-group">
+            <label>Space for material storage:</label>
+            <input type="text" class="form-control" formControlName="spaceStorage">
+        </div>
+
+        <div class="form-group">
+            <label>Scaffold access comment:</label>
+            <input type="text" class="form-control" formControlName="scaffoldAComment">
+        </div>
+
+        <div class="form-group">
+            <label>Scaffold Wrapping:</label>
+            <input type="text" class="form-control" formControlName="sWrapping">
+        </div>
+
+        <div class="form-group">
+            <label>Living Arrangements:</label>
+            <input type="text" class="form-control" formControlName="livingArrange">
+        </div>
+
+        <div class="form-group">
+            <label>Allow additonal hours due to site:</label>
+            <input type="text" class="form-control" formControlName="addHours">
+        </div>
+
+        <div class="form-group">
+            <label>Is Sea Spray Zone?:</label>
+            <input type="text" class="form-control" formControlName="seasprayzone">
+        </div>
+    </div>
+    <br>
+    <!-- Section -->
+    <h2>Safety Requirements</h2>
+    <hr class="thick">
+    <div formGroupName="safetyRequirements">
+        <div class="form-group">
+            <label>Site Security Fencing:</label>
+            <input type="text" class="form-control" formControlName="siteSecurityFencing">
+        </div>
+
+        <div class="form-group">
+            <label>Fall In Protection:</label>
+            <input type="text" class="form-control" formControlName="fallInProtection">
+        </div>
+
+        <div class="form-group">
+            <label>Toilet Hire Required:</label>
+            <input type="text" class="form-control" formControlName="toiletHireRequired">
+        </div>
+
+        <div class="form-group">
+            <label>Vehicle Crossing Protection:</label>
+            <input type="text" class="form-control" formControlName="vehicleCrossingProtect">
+        </div>
+    </div>
+
+    <br>
+    <h2>Allowances and Insurances</h2>
+    <hr class="thick">
+    <div formGroupName="allowancesInsurances">
+        <div class="form-group">
+            <label>Contractors All Risk Fee:</label>
+            <input type="text" class="form-control" formControlName="contractorsRiskFee">
+        </div>
+
+        <div class="form-group">
+            <label>Building Guarantee Fee:</label>
+            <input type="text" class="form-control" formControlName="buildingGuaranteeFee">
+        </div>
+    </div>
+    <br>
+
+    <h2>Professional Services</h2>
+    <hr class="thick">
+    <div formGroupName="professionalServices">
+        <div class="form-group">
+            <label>Drawings:</label>
+            <input type="text" class="form-control" formControlName="drawings">
+        </div>
+
+        <div class="form-group">
+            <label>Geotechnical:</label>
+            <input type="text" class="form-control" formControlName="geotechnical">
+        </div>
+
+        <div class="form-group">
+            <label>Engineering:</label>
+            <input type="text" class="form-control" formControlName="engineering">
+        </div>
+
+        <div class="form-group">
+            <label>Land Surveyor:</label>
+            <input type="text" class="form-control" formControlName="landSurveyor">
+        </div>
+
+        <div class="form-group">
+            <label>Council Fees:</label>
+            <input type="text" class="form-control" formControlName="councilFees">
+        </div>
+
+        <div class="form-group">
+            <label>Other:</label>
+            <input type="text" class="form-control" formControlName="other">
+        </div>
+    </div>
+    <br>
+
+    <!--TODO: Put these in a grid -->
+    <h2>Interior</h2>
+    <hr class="thick">
+    <div formGroupName="interior">
+        <!-- Material -->
+            <div class="row">
+                <div class="col custom-margin-left">
+                    <h3>Material</h3>
+                </div>
+                
+                <div class="col custom-margin-leftStyle">
+                    <h3>Style</h3>
+                </div>
+            </div>
+            
+            <br>
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Doors:</label>
+                </div>
+                <div class="col">
+                    <div formGroupName="material">
+                        <input type="text" class="form-control" formControlName="doors">
+                    </div>
+                </div>
+                <div class="col">
+                    <div formGroupName="style">
+                        <input type="text" class="form-control" formControlName="doors">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Skirting:</label>
+                </div>
+                <div class="col">
+                    <div formGroupName="material">
+                        <input type="text" class="form-control" formControlName="skirting">
+                    </div>
+                </div>    
+                <div class="col">
+                    <div formGroupName="style">
+                        <input type="text" class="form-control" formControlName="skirting">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Scotia / Cornice:</label>
+                </div>
+                <div class="col mt-4">
+                    <div fromGroupName="material">
+                        <input type="text" class="form-control" formControlName="scotia">
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div formGroupName="style">
+                        <input type="text" class="form-control" formControlName="scotia/cornice">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Architrave:</label>
+                </div>
+                <div class="col">
+                    <div formGroupName="material">
+                        <input type="text" class="form-control" formControlName="architrave">
+                    </div>
+                </div>
+                <div class="col">
+                    <div formGroupName="style">
+                        <input type="text" class="form-control" formControlName="architrave">
+                    </div>
+                </div>
+            </div>    
+        <!-- Style -->
+    </div>
+    <br>
+
+    <h2>Exterior</h2>
+    <hr class="thick">
+    <div formGroupName="exterior">
+        <!-- Style -->
+        <div class="row">
+            <div class="col custom-margin-left">
+                <h3>Material</h3>
+            </div>
+
+            <div class="col custom-margin-leftStyle">
+                <h3>Type</h3>
+            </div>
+        </div>
+         
+            <br>
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Primary Cladding</label>
+                </div>
+                <div class="col">
+                    <div formGroupName="material">
+                        <input type="text" class="form-control" formControlName="primaryCladding">
+                    </div>
+                </div>
+                <div class="col">
+                    <div formGroupName="Type">
+                        <input type="text" class="form-control" formControlName="primaryCladding">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Secondary Cladding</label>
+                </div>
+                <div class="col">
+                    <div formGroupName="material">
+                        <input type="text" class="form-control" formControlName="secondaryCladding">
+                    </div>
+                </div>
+                <div class="col">
+                    <div formGroupName="Type">
+                        <input type="text" class="form-control" formControlName="secondaryCladding">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Joinery Type</label>
+                </div>
+                <div class="col">
+                    <div formGroupName="material">
+                        <input type="text" class="form-control" formControlName="joineryType">
+                    </div>
+                </div>
+                <div class="col">
+                    <div formGroupName="Type">
+                        <input type="text" class="form-control" formControlName="joineryType">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-1 mt-1 mr-2">
+                    <label>Roof</label>
+                </div>
+                <div class="col">
+                    <div forGroupName="material">
+                        <input type="text" class="form-control" formControlName="roof">
+                    </div>
+                </div>
+                <div class="col">
+                    <div forGroupName="Type">
+                        <input type="text" class="form-control" formControlName="roof">
+                    </div>
+                </div>
+            </div>
+        <!-- Type -->
+        
+    </div>
+
+    <h2>Other comments:</h2>
+    <div class="form-group">
+        <textarea class="form-control" rows="3" formControlName="otherComments"></textarea>
+    </div>
+</form>
+
+<button type="button" class="btn btn-primary float-right mb-3 w-25">Next</button>

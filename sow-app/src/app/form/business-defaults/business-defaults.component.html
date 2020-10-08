@@ -1,0 +1,91 @@
+<form [formGroup]="businessDefaults" class="pt-4 pl-4">
+    <h1>Business Defaults</h1>
+    <br>
+    <div class="form-group">
+        <label>Company Name:</label>
+        <input type="text" class="form-control" formControlName="companyName">
+    </div>
+    
+    <div class="form-group">
+        <label>Your Name:</label>
+        <input type="text" class="form-control" formControlName="yourName">
+    </div>
+    <hr class="thick">
+    <h2>People and Pricing</h2>
+    <br>
+    <div formGroupName="peoplePricing">
+        <div class="form-group">
+            <label>Markup:</label>
+            <input type="text" class="form-control" formControlName="markup">
+        </div>
+        
+        <div class="form-group">
+            <label>Admin Hours:</label>
+            <input type="text" class="form-control" formControlName="adminHours">
+        </div>
+        
+    </div>
+    
+    <label>Site Sign:</label>
+    <input type="text" class="form-control" formControlName="siteSign">
+    <hr class="thick">
+
+    <br>
+    <h2>Sub Trades</h2>
+    <br>
+    <div formGroupName="subTrades">
+        <div class="form-group">
+            <label>Plasterboard labour by:</label>
+            <input type="text" class="form-control" formControlName="plasterboardLabourBy">
+        </div>
+
+        <div class="form-group">
+            <label>Plasterboard Ceiling Default:</label>
+            <input type="text" class="form-control" formControlName="plasterboardCeilingDefault">
+        </div>
+
+        <div class="form-group">
+            <label>Insulation:</label>
+            <input type="text" class="form-control" formControlName="insulation">
+        </div>
+
+        <div class="form-group">
+            <label>Ceiling battens:</label>
+            <input type="text" class="form-control" formControlName="ceilingBattens">
+        </div>
+    </div>
+    <br>
+
+    <hr class="thick">
+
+    <h2>Job rates</h2>
+    <br>
+    <div formGroupName="jobRates">
+        <div class="form-group">
+            <label>Plumber ($/hour):</label>
+            <input type="number" class="form-control" formControlName="plumber">
+        </div>
+        
+        <div class="form-group">
+            <label>Electrician ($/hour):</label>
+            <input type="number" class="form-control" formControlName="electrician">
+        </div>
+
+        <div class="form-group">
+            <label>Painter ($/hour):</label>
+            <input type="number" class="form-control" formControlName="painter">
+        </div>
+
+        <div class="form-group">
+            <label>Drainlayer ($/hour):</label>
+            <input type="number" class="form-control" formControlName="drainlayer">
+        </div>
+
+        <div class="form-group">
+            <label>Roofer ($/hour):</label>
+            <input type="number" class="form-control" formControlName="roofer">
+        </div>   
+    </div>
+</form>
+
+<button type="button" class="btn btn-primary float-right mb-3 w-25">Next</button>

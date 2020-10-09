@@ -15,6 +15,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ZoneComponent } from './zone/zone.component';
 import { ProjectListComponent } from './project-list/project-list.component'
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     PageNotFoundComponent,
     ZoneComponent,
     ProjectListComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
